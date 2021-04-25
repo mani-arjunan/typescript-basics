@@ -30,3 +30,21 @@ interface Name<Type> {
 declare const name1: Name<number>
 
 console.log(name1.getName())
+
+
+function map<Input, Output>(arr: Input[], func: (arg: Input) => Output): Output[] {
+    return arr.map(func)
+}
+
+
+// Constraints
+
+function longest<Type extends { length: number }>(a: Type, b: Type): Type {
+    if(a.length > b.length){
+        return a
+    }
+
+    return b
+}
+
+

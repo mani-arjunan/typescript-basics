@@ -1,3 +1,5 @@
-let str: string = 'helloworld'
+function sample1(name, arg) : void {
+    console.log(name, arg)
+}
 
-console.log(str)
+sample1('Manikandan', 1)
